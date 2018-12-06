@@ -1,0 +1,17 @@
+{
+"manifest_version": 2,
+    "name": "Hide Facebook",
+    "description": "Hide every aspect of the Facebook home page because honestly why not",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://www.facebook.com/"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
