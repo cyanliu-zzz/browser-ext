@@ -1,6 +1,7 @@
-# HenREE Simulator 3000
-It's 2018 and you can now browse the internet like your favorite Henry. This browser extension replaces the "re" or "ry" at the end of words with "REEEE" with some random number of E's between 4 and 15. Enjoy.
+# Hide Facebook
+This extension clears literally everything from facebook.com except for the header bar
 
+have fun
 
 ## Setup instructions
 
@@ -19,10 +20,4 @@ It's 2018 and you can now browse the internet like your favorite Henry. This bro
   * Note you'll need to do this every time you reopen the browser
   * You can avoid this by using the Firefox developer browser instead
 4. Select a file *within* the folder; it can be this README.md
-5. Cry
 
-
-
-**Anything else**:
-
-why
