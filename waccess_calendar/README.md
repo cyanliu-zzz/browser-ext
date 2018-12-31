@@ -4,4 +4,6 @@ Based on personal experiences using WolverineAccess during my semesters as a stu
 
 This extension creates a `.ics` file that contains most relevant information about a given class (the name, section number, type [lecture, discussion, etc.], location, and what days of the week its repeated over). The repeated events also account for the length of the semester and any school breaks.
 
-## How to use the extension
+## How to use the extension:
+
+TBD

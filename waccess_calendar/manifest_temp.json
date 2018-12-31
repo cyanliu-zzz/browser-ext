@@ -1,0 +1,39 @@
+{
+
+  "manifest_version": 2,
+  "name": "WebAccessibilityHelper",
+  "version": "1.0",
+
+  "description": "Live chat to aid users facing accessibility problems",
+
+  "icons": {
+    "32": "icons/chat-32.ico",
+    "48": "icons/chat-48.ico"
+  },
+
+  "permissions": ["tabs", "storage"],
+
+  "background": {
+    "scripts": ["jquery-3.3.1.js","socket.io.js","background.js"]
+  },
+
+  "browser_action": {
+    "default_icon": "icons/chat-32.ico",
+    "default_title": "Web Accessibility Helper",
+    "default_popup": "popup/options.html"
+  },
+
+  "sidebar_action": {
+    "default_icon": "icons/chat-48.ico",
+    "default_title": "Web Accessibility Chat",
+    "default_panel": "sidebar/sidebar.html"
+  },
+
+  "content_scripts": [
+    {
+      "matches":["<all_urls>"],
+      "js":["jquery-3.3.1.js", "annotation-form.js"]
+    }
+  ]
+
+}
