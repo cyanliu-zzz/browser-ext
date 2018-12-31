@@ -5,15 +5,24 @@
     <link rel="stylesheet" href="options.css">
   </head>
   <body>
-	<h1>Select a Semester</h1>
+	<h1>Calendar Options</h1>
 	
 	<p>Select the semester for which you would like to generate a schedule. This will determine how long the events will repeat for and will also account for any holidays in the academic calendar.</p> 
-    <select id="semester">
-      <option value="w19">Winter 19</option>
-      <option value="sp19">Spring 19</option>
-      <option value="su19">Summer 19</option>
-      <option value="f19">Fall 19</option>
-    </select>
+    <form>
+      <label for="calendar-name">Calendar name:</label>
+      <input type="text" id="calendar-name"></input>
+      <label for="semester">Semester:</label>
+      <select id="semester">
+        <option value="w19">Winter 19</option>
+        <option value="sp19">Spring 19</option>
+        <option value="su19">Summer 19</option>
+        <option value="f19">Fall 19</option>
+      </select>
+    
+      <input type="submit" id="submit" value="Create .ics file"></input>
+
+    </form>
+    
   </body>
   <script src="../jquery-3.3.1.js"></script>
 

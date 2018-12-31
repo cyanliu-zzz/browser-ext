@@ -8,7 +8,23 @@ h1 {
   font-size: 26px;
 }
 
+p {
+  font-size: 14px;
+}
 option,
-select {
+select,
+input {
   font-size: 16px;
+  display: block;
+  margin-bottom: 4px;
+}
+
+label {
+  font-size: 12px;
+}
+
+#submit {
+  border-radius: 0;
+  border: 1px solid #5e9e89;
+  background-color: aliceblue;
 }
