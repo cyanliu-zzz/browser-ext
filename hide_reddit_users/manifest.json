@@ -6,12 +6,15 @@
     "content_scripts": [
         {
             "matches": [
-                "*://www.facebook.com/"
+                "*://www.reddit.com/"
             ],
             "js": [
                 "content.js"
             ],
             "run_at": "document_end"
         }
-    ]
+    ],
+    "background": {
+        "scripts": ["jquery-3.3.1.js","background.js"]
+      }
 }
