@@ -4,7 +4,15 @@ A collection of folders (because at the time I didn't know submodules were a thi
 
 The idea was inspired after completing my senior capstone course during the spring semester of 2018 and realizing that browser extensions were a lot of fun to make :)
 
-## General instructions unless stated otherwise:
+## Extension Progress
+- ❓ - hide fb
+- ✅ - hide reddit users
+- ❓ - waccess calendar
+
+
+## General instructions for using the extensions:
+
+Any exception to these steps would be listed in the folder's README.md
 
 1. Clone the repository
 
