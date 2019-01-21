@@ -3,12 +3,18 @@
     "name": "Hide Reddit Users",
     "description": "Hides the name of reddit users from all posts and comments",
     "version": "1.0",
+
+    "background": {
+        "scripts": ["jquery-3.3.1.js", "content.js"]
+    },
+
     "content_scripts": [
         {
             "matches": [
-                "*://www.reddit.com/"
+                "*://www.reddit.com/*"
             ],
-            "js": ["jquery-3.3.1.js","content.js"]
+            "js": ["jquery-3.3.1.js","content.js"],
+            "run_at": "document_end"
         }
     ]
 }
