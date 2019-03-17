@@ -27,7 +27,8 @@ END:VTIMEZONE
 BEGIN:VEVENT
 DTSTART;TZID=America/Detroit:   SEMESTER_DEPENDENT
 DTEND;TZID=America/Detroit:     SEMESTER_DEPENDENT
-RRULE:                          COURSE_INFO
+EXDATE;TZID=America/Detroit:    SEMESTER_DEPENDENT  (excludes breaks etc.)
+RRULE:                          COURSE_INFO         (how often and when does a course repeat)
 DTSTAMP:20181227T231140Z
 UID:uniqname-coursenum-section-semester
 LOCATION:                       COURSE_INFO
