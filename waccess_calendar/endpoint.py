@@ -23,19 +23,17 @@ def get_semester_dates(semester, semester_dict):
 
     soup = BeautifulSoup(requests.get(url).text, 'lxml')
 
-    cal_names = [re.sub(r'\s$','',re.search(r'text(.*)dates',unquote(a.get("href")))[0][5:-6])
+    event_names = [re.sub(r'\s$','',re.search(r'text(.*)dates',unquote(a.get("href")))[0][5:-6])
+                for a in soup.find_all('a',attrs={'class':'google-add'})]
+
+    # dates for a given event, in the format start_YYYYMMDD/end_YYYYMMDD
+    event_dates = [re.sub(r'\s$','',re.search(r'dates(.*)details',unquote(a.get("href")))[0][6:-8])
                 for a in soup.find_all('a',attrs={'class':'google-add'})]
 
 
-    # ????
-    print(cal_names)
+    semester_dates = dict(zip(event_names, event_dates))
 
-    cal_names = [re.sub(r'\s$','',re.search(r'dates(.*)details',unquote(a.get("href")))[0][6:-8])
-                for a in soup.find_all('a',attrs={'class':'google-add'})]
-
-    print(cal_names)
-
-    return "aaaa"
+    return semester_dates
 
 
 if __name__ == "__main__":
